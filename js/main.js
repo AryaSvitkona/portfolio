@@ -3,10 +3,13 @@
 		sidebar: null,
 		container: null,
 		btn: null,
+		title: null,
+
 		init: function() {
 			this.sidebar = $('aside');
 			this.container = $('.main');
 			this.btn = $('.toggle-nav');
+			this.title = $('.video-text');
 
 			this.listen();
 		},
@@ -22,19 +25,21 @@
 					that.show();
 				}
 
-			})
+			});
 		},
 		hide: function() {
 			$(this.sidebar).removeClass('is-visible');
 			$(this.sidebar).animate({ width: '0' });
 			$(this.container).animate({ left: '0' });
 			$(this.btn).animate({ left: '1%' });
+			$(this.title).animate({ right: '1%' });
 		},
 		show: function() {
 			$(this.sidebar).addClass('is-visible');
 			$(this.sidebar).animate({ width: '20%' });
 			$(this.container).animate({ left: '20%' });
 			$(this.btn).animate({ left: '21%' });
+			$(this.title).animate({ right: '21%' });
 		}
 	};
 

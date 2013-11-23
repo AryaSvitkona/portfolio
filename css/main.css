@@ -1,8 +1,6 @@
-.main {
-	position: relative;
-	background: #FFF;
-	left: 0;
-	width: 100%;
+body {
+
+	overflow-x: hidden; 
 }
 
 .toggle-nav {
@@ -16,12 +14,17 @@
 	border: none;
 	border-radius: 3px;
 	font-size: 1.5em;
+	z-index: 9;
+	outline: none;
 }
 
-.video-text h1 {
-	margin: 0;
+.toggle-nav:hover {
+	background: #444;
 }
 
+.toggle-nav:active {
+	background: #555;
+}
 
 aside {
 	position: fixed;
@@ -30,4 +33,55 @@ aside {
 	margin: 0;
 	padding: 0;
 	background: #333;
+}
+
+nav {
+	width: 500%;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav a,
+nav a:hover,
+nav a:active,
+nav a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.main {
+	position: relative;
+	background: #FFF;
+	left: 0;
+	width: 100%;
+}
+
+.video-background {
+	position: relative;
+}
+.video-background > video {
+ 	height: 100%;
+ 	width: 100%;
+ 	display: block;
+}
+
+.video-pattern {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.video-text {
+	position: absolute;
+	right: 1%;
+	top: 2%;
+	text-align: right;
+	color: white;
+}
+
+.video-text h1 {
+	margin: 0;
 }
