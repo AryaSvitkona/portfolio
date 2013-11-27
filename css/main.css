@@ -1,3 +1,9 @@
+@font-face
+{
+font-family: 'Harabara';
+src: url('font/Harabara.ttf')
+    ,url('font/Harabara.eot'); /* IE9 */
+}
 body {
 
 	overflow-x: hidden; 
@@ -7,7 +13,7 @@ body {
 	position: fixed;
 	width: 48px;
 	height: 48px;
-	background: #333;
+	background: rgba(0,0,0, 0.2);
 	top: 1%;
 	left: 1%;
 	color: #FFF;
@@ -33,6 +39,7 @@ aside {
 	margin: 0;
 	padding: 0;
 	background: #333;
+	border-right: 2px solid #666;
 }
 
 nav {
@@ -42,6 +49,9 @@ nav {
 nav ul {
 	list-style: none;
 }
+nav span{
+	font-family: Harabara;
+}
 
 nav a,
 nav a:hover,
@@ -49,7 +59,12 @@ nav a:active,
 nav a:visited {
 	color: #FFF;
 	text-decoration: none;
+	text-shadow: 1px 1px 0 #00AEEF;
+	font-size: 1.8em;
 }
+.nav-text{
+	font-family: Harabara;
+} 
 
 .main {
 	position: relative;
@@ -70,8 +85,11 @@ nav a:visited {
 .video-pattern {
 	height: 100%;
 	width: 100%;
-	position: absolute;
+	position:absolute;
 	top: 0;
+	background:url(../img/pattern.png);
+	background-repeat: repeat; 
+	opacity: 0.5;
 }
 
 .video-text {
@@ -84,4 +102,19 @@ nav a:visited {
 
 .video-text h1 {
 	margin: 0;
+}
+h1,h2,h3,h4,h5{
+	color:#FFF;
+	text-shadow:2px 2px 0px #00AEEF;
+	font-family:Harabara;
+}
+h1{font-size:500%;}
+h2{font-size:300%;}
+h3{font-size:200%;}
+h4{font-size:100%;}
+h5{font-size:70%;}
+
+.col-md-12 h2{
+	color:#00AEEF;
+	text-shadow: 0 0 0;
 }

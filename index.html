@@ -1,75 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>ePortfolio - Stefano Rutishauser</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <!-- Bootstrap -->
-    
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/template.css" rel="stylesheet" media="screen">
+<head>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
-    <!-- Include the own JS-->
-        <script src="js/ownscript.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+	<title>ePortfolio</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="wrap">
+		<aside>
+			<nav>
+				<ul>
+					<li><a href="#"><i class="fa fa-home"></i><span class="visible-md visible-lg nav-text">To the top</span></a></li>
+					<li><a href="#"><i class="fa fa-user"></i><span class="visible-md visible-lg nav-text">Who I am</span></a></li>
+					<li><a href="#"><i class="fa fa-cogs"></i><span class="visible-md visible-lg nav-text">Projects</span></a></li>
+					<li><a href="#"><i class="fa fa-info"></i><span class="visible-md visible-lg nav-text">Contact</span></a></li>
+				</ul>
+			</nav>
+		</aside>
+		<div class="main" role="main">
+			<button class="toggle-nav">
+				<i class="fa fa-bars"></i>
+				<span class="hidden">Toggle Menu</span>
+			</button>
+			<div class="video-background">
+				<video autoplay preload src="video/homo2.mp4" poster=""></video>
+				<div class="video-pattern"></div>
+				<div class="video-text">
+					<h1>Stefano Rutishauser</h1>
+					<h2>3D Designer | Web Developer</h2>
+					<h3>athlete | pilot | worker</h3>
+					<h4>lover and fighter</h4>
+				</div>
+			</div>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-      <div id="wrapper">
-            <div id="navigation">
-                      <div class="menubox"><a href="#"><i class="fa fa-home"></i> index</a></div>
-                      <div class="menubox"><a href="#whoiam"><i class="fa fa-user"></i> who I am</a></div>
-                      <div class="menubox"><a href="#projects"><i class="fa fa-cogs"></i> projects</a></div>
-                      <div class="menubox"><a href="#contact"><i class="fa fa-info"></i> contact</a></div>
-            </div>
-            <div id="main">
-                 <a href="#" onClick="offcanvas();" id="offcanvas_click"><i class="fa fa-list"></i></a>
-                <div id="background">
-                    <div id="video_pattern">
-                    </div>
-                    <div id="title">
-                        <h1>Stefano Rutishauser</h1>
-                        <h2>3D Designer | WebDeveloper</h2>
-                        <h3>athlete | pilot | worker</h3>
-                        <h4>lover and fighter</h4>
-                    </div>
-                    <video id="video_background" preload="auto" autoplay loop muted="muted" volume="0"> 
-                        <source src="video/homo2.mp4" type="video/webm"> 
-                        <source src="video/homo2.mp4" type="video/mp4"> Video not supported 
-                    </video>
-                </div>
-                <div id="background_bottom"></div>
-                    <div class="container">
-                         <div class="site">
-                            <h1 id="whoiam">who I am</h1>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                         </div>
-                         <div class="site">
-                            <h1 id="projects"> projects</h1>
-                                <ul>
-                                    <li><a href="#"><img src="img/member1.jpg" class="img-responsive img-rounded"></a></li>
-                                    <li><a href="#"><img src="img/member2.jpg" class="img-responsive img-rounded"></a></li>
-                                    <li><a href="#"><img src="img/member3.jpg" class="img-responsive img-rounded"></a></li>
-                                    <li><a href="#"><img src="img/member4.jpg" class="img-responsive img-rounded"></a></li>
-                                    <li><a href="#"><img src="img/member5.jpg" class="img-responsive img-rounded"></a></li>
-                                    <li><a href="#"><img src="img/member6.jpg" class="img-responsive img-rounded"></a></li>       
-                                </ul>
-                         </div>
-                         <div class="site">
-                            <h1 id="contact"> contact</h1>
-                            <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut löabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                         </div>
-                    </div>
-                </div>   
-            </div>
-      </div>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                <script src="https://code.jquery.com/jquery.js"></script>
-                <!-- Include all compiled plugins (below), or include individual files as needed -->
-                <script src="bootstrap/js/bootstrap.min.js"></script>  
-  </body>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>who I am</h2>
+						<p>
+							Nun unter dem Punkt “About Me” erzählt der Autor ein wenig über sich und die vor Ihnen liegende Website.
+Der Gedanke zu dieser Website entstand in einer ruhigen Zeit als Stefano Rutishauser sich mit dem Thema “mit Eigeninitiative und ohne Ablenkung endlich WordPress lernen” befasste.
+Während dieser Zeit versuchte dieser sein erstes WordPress Template zu machen (welches übrigens noch in Arbeit ist). Dabei wollte Stefano sein Wissen anderen gleichgesinnten weitergeben.
+Somit war nahe liegend, dass der “NoobEntwickler” eine Wissensplattform auf die Beine stellen wird, welche verschiedene Themen der Bereiche Multimedia & Informatik abdeckt.
+Der erste Baustein wurde mit der  PLE  - Project Learning Environment Website gelegt.
+
+Stefano Rutishauser ist ein ausgelehrter Mediamatiker (yeah mit EFZ), welcher im August 2012 abschloss.
+Seine Ausbildung absolvierte dieser in der SBW Neue Medien AG in Romanshorn.
+Zurzeit arbeitet dieser in der IT Abteilung der SBW Holding, verwaltet mit Unterstützung die Infrastruktur und bearbeitet Support Anfragen.
+Wer sein tägliches Brot verdient, weiss das man mit zwei Jobs mehr Brot bekommt, daher arbeitet Stefano zusätzlich 20% bei der SBW Neue Medien AG als Lernbegleiter.
+Durch seine Funktion als “Begleiter beim Lernen” liegt ihm viel daran, sein Wissen den Auszubildenden weiterzugeben.
+
+Nun ist Stefano gelangweilt in der dritten Person zu schreiben und macht hier Schluss…
+						</p>
+					</div>
+					<div class="col-md-12">
+						<h2>projects</h2>
+						<div class="row">
+							<div class="col-md-3">
+								<a class="thumbnail" href="#">
+									<img src="http://placehold.it/180x180" height="180" width="180">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#">
+									<img src="http://placehold.it/180x180" height="180" width="180">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#">
+									<img src="http://placehold.it/180x180" height="180" width="180">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#">
+									<img src="http://placehold.it/180x180" height="180" width="180">
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3">
+								<a class="thumbnail" href="#">
+									<img src="http://placehold.it/180x180" height="180" width="180">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#">
+									<img src="http://placehold.it/180x180" height="180" width="180">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#">
+									<img src="http://placehold.it/180x180" height="180" width="180">
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a class="thumbnail" href="#">
+									<img src="http://placehold.it/180x180" height="180" width="180">
+								</a>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-12">
+						<h2>contact</h2>
+						<p>
+							Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+							Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+							Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+							Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+							Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="//code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>  
+    <script src="js/main.js"></script>
+</body>
 </html>
