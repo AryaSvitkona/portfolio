@@ -58,11 +58,11 @@ nav a:active,
 nav a:visited {
 	color: #FFF;
 	text-decoration: none;
-	text-shadow: 1px 1px 0 #00AEEF;
 	font-size: 1.8em;
 }
 .nav-text{
 	font-family: Harabara;
+	padding-left: 1%;
 } 
 
 .main {
@@ -111,7 +111,6 @@ nav a:visited {
 }
 h1,h2,h3,h4,h5{
 	color:#FFF;
-	text-shadow:2px 2px 0px #00AEEF;
 	font-family:Harabara;
 }
 h1{font-size:500%;}
@@ -127,6 +126,11 @@ h5{font-size:70%;}
 .col-md-12 h3{
 	color:#00AEEF;
 	text-shadow: 0 0 0;
+}
+
+.socialized{
+	width:110px;
+	float:left;
 }
 
 .footer{
@@ -148,7 +152,6 @@ h5{font-size:70%;}
 	text-align: center;
 	font-family: Harabara;
 	color:white;
-	text-shadow: 1px 1px 0 #00AEEF;
 	vertical-align:middle;
 	font-size:1.2em; 
 }
