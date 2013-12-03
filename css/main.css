@@ -99,8 +99,8 @@ nav a:visited {
 	color: white;
 }
 
-.video-text h1 {
-	margin: 0;
+.video-text h1 
+{	margin: 0;
 }
 
 .video-border{
@@ -129,8 +129,31 @@ h5{font-size:70%;}
 }
 
 .socialized{
-	width:110px;
+	width:56px;
+	height:100%;
+	float:right;
+	margin-right:20px;
+}
+.socialized img{
+	width:50px;
+}
+
+.socialized img:hover{
+	width:56px;
+}
+.socialized img:active{
+	width:56px;
+	border:1px solid #666;
+}
+.socialized:first-child{
+	margin-right:0;
+}
+
+.socialized-nav{
 	float:left;
+}
+.socialized-nav img{
+	width:30%;
 }
 
 .footer{
