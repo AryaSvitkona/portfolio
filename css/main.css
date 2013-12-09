@@ -38,20 +38,25 @@ aside {
 	margin: 0;
 	padding: 0;
 	background: #333;
-	border-right: 2px solid #666;
+	border-right: 2px solid #00AEEF;
 }
-
 nav {
-	width: 500%;
+	width: 100%;
 }
-
 nav ul {
 	list-style: none;
+}
+nav li{
+	height:40px;
+	margin:10px 0px 0px 0px;
+	background-color: #00AEEF;
+}
+nav li:first-child{
+	margin:100px 0 0 0;
 }
 nav span{
 	font-family: Harabara;
 }
-
 nav a,
 nav a:hover,
 nav a:active,
@@ -59,11 +64,14 @@ nav a:visited {
 	color: #FFF;
 	text-decoration: none;
 	font-size: 1.8em;
-}
-.nav-text{
 	font-family: Harabara;
-	padding-left: 1%;
-} 
+	padding:0 0 0 10px;
+}
+.nav-address{
+	position: relative;
+	margin:50px 0 0 0 ;
+	color:white;
+}
 
 .main {
 	position: relative;
@@ -108,6 +116,36 @@ nav a:visited {
 	height:10px;
 	background:url(../img/pattern_background_bottom_t.png);
 	background-repeat:repeat-x;
+}
+.video-button a{
+	position:absolute;
+	top:80%;
+	background: rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	font-family: Harabara;
+	font-size: 1.8em;
+	color: white;
+	min-height: 41px;
+	padding: 12px 10px 12px 10px;
+	border-radius: 20px;
+	-webkit-transition: border-radius 0.3s;
+	-moz-transition: border-radius 0.3s;
+	-o-transition: border-radius 0.3s;
+	transition: border-radius 0.3s;
+}
+.video-button a i{
+padding-right:10px;
+}
+.video-button a:first-child{
+	left:38%;
+}
+.video-button a:last-child{
+	left:52%;
+}
+
+.video-button a:hover{
+	border-radius: 0px;
+	background: #444;
 }
 h1,h2,h3,h4,h5{
 	color:#FFF;
