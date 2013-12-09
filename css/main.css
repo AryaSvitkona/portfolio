@@ -54,11 +54,13 @@ nav li{
 nav li:first-child{
 	margin:100px 0 0 0;
 }
+nav li:hover{
+	background-image:url(../img/pattern_rev.png);
+}
 nav span{
 	font-family: Harabara;
 }
 nav a,
-nav a:hover,
 nav a:active,
 nav a:visited {
 	color: #FFF;
