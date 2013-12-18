@@ -12,6 +12,9 @@ body {
 	padding: 20px 0 20px 0;
 	border-bottom: 2px solid #888;
 }
+.a-blue{
+	color:#00AEEF;
+}
 /*closed*/
 .toggle-nav {
 	position: fixed;
@@ -56,9 +59,6 @@ nav li{
 nav li:first-child{
 	margin:100px 0 0 0;
 }
-nav li:hover{
-	background-image:url(../img/pattern_rev.png);
-}
 nav span{
 	font-family: 'Lato', sans-serif;
 }
@@ -66,10 +66,23 @@ nav a,
 nav a:active,
 nav a:visited {
 	color: #FFF;
-	text-decoration: none;
 	font-size: 1.8em;
 	font-family: 'Lato', sans-serif;
 	padding:0 0 0 10px;
+	text-decoration: none;
+	-webkit-transition-property: color, background, opacity, left, right;
+	-webkit-transition-duration: 0.3s, 0.3s, 0.3s;
+	-webkit-transition-timing-function: ease-out, ease-out;
+	-moz-transition-property: color, background, opacity, left, right;
+	-moz-transition-duration: 0.3s, 0.3s, 0.3s;
+	-moz-transition-timing-function: ease-out, ease-out;
+	transition-property: color, background, opacity, left, right;
+	transition-duration: 0.3s, 0.3s, 0.3s;
+	transition-timing-function: ease-out, ease-out;
+}
+nav a:hover{
+	color:#888;
+	text-decoration: none;
 }
 .main {
 	position: relative;
@@ -147,6 +160,11 @@ h2{font-size:300%;}
 h3{font-size:200%;}
 h4{font-size:100%;}
 h5{font-size:70%;}
+.timeline li{
+	margin: 20px 0 20px 0;
+	list-style: circle;
+
+}
 .col-md-12 h2{
 	color:#00AEEF;
 	text-shadow: 0 0 0;
@@ -198,4 +216,46 @@ h5{font-size:70%;}
 	color:white;
 	vertical-align:middle;
 	font-size:1.2em; 
+}
+@media only screen and (max-width: 780px){
+	h1{font-size:300%;}
+	h2{font-size:150%;}
+	h3{font-size:100%;}
+	h4{font-size:80%;}
+	h5{font-size:40%;}
+
+	nav a,
+	nav a:hover,
+	nav a:visited{
+		font-size: 1.2em;
+	}
+	nav li{
+	height:30px;
+	margin:10px 0px 0px 0px;
+	background-color: #00AEEF;
+	}
+	nav li:first-child{
+		margin:20px 0 0 0;
+	}
+}
+@media only screen and (max-width: 480px){
+	h1{font-size:150%;margin:0;}
+	h2{font-size:100%;margin:0;}
+	h3{font-size:90%;margin:0;}
+	h4{font-size:80%;margin:0;}
+	h5{font-size:40%;margin:0;}
+
+	nav a,
+	nav a:hover,
+	nav a:visited{
+		font-size: 1.2em;
+	}
+	nav li{
+	height:30px;
+	margin:10px 0px 0px 0px;
+	background-color: #00AEEF;
+	}
+	nav li:first-child{
+		margin:20px 0 0 0;
+	}
 }
