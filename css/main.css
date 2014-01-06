@@ -160,10 +160,19 @@ h2{font-size:300%;}
 h3{font-size:200%;}
 h4{font-size:100%;}
 h5{font-size:70%;}
+.timeline{
+	padding:0;
+}
 .timeline li{
+	list-style: none;
 	margin: 20px 0 20px 0;
-	list-style: circle;
-
+}
+.timeline-bar{
+	position: absolute;
+	top: 0;
+	width: 5px;
+	height: 100%;
+	background: red;
 }
 .col-md-12 h2{
 	color:#00AEEF;
