@@ -45,5 +45,6 @@
 
 	$(document).ready(function() {
 		Nav.init();
+		$('#horiz_container_outer').horizontalScroll();
 	});
 })(jQuery);
