@@ -5,7 +5,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.horizontal.scroll.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	<title>ePortfolio</title>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="img/favicon.ico" >
@@ -80,7 +80,7 @@
 								<ul class="timeline">
 									<li>
 										<div class="timeline-icon">
-											<i class="fa fa-cog" style="color:#000"></i>
+											<!--<i class="fa fa-cog" style="color:#000"></i>-->
 										</div>
 										<div class="timeline-text">
 											<p> Put here some insane text. te dieser während 4 Jahren in der SBW Neue Medien AG in Romanshorn. 
@@ -90,34 +90,28 @@ Zurzeit arbeitet dieser in der IT Abteilung der SBW Holding, verwaltet mit Unter
 									<li>Primarschule <span class="a-blue">|</span> 1999 - 2005 </li>
 									<li>Primarschule <span class="a-blue">|</span> 1999 - 2005 </li>
 									<li>Primarschule <span class="a-blue">|</span> 1999 - 2005 </li>
-									<li class="timeline-bar" style="margin-left:50%"></li>
+									<!--<li class="timeline-bar" style="margin-left:50%"></li>-->
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div id="projects" class="col-md-12">
 						<h2>projects</h2>
-						<ul id="horiz_container_outer">
-							<li id="horiz_container_inner">
-								<ul id="horiz_container">
-									<li><img src="jquery-horizontal-scrollbars/images/toystory.png" width="500px" height="300px" alt="Toy Story" /></li>
-									<li><img src="jquery-horizontal-scrollbars/images/up.png" width="500px" height="300px" alt="UP" /></li>
-									<li><img src="jquery-horizontal-scrollbars/images/ratatouille.png" width="500px" height="300px" alt="Ratatouille" /></li>
-									<li><img src="jquery-horizontal-scrollbars/images/findingnemo.png" width="500px" height="300px" alt="Finding Nemo" /></li>
-									<li><img src="jquery-horizontal-scrollbars/images/cars.png" width="500px" height="300px" alt="Cars" /></li>
-									<li><img src="jquery-horizontal-scrollbars/images/monstersinc.png" width="500px" height="300px" alt="Monsters Inc" /></li>
-									<li><img src="jquery-horizontal-scrollbars/images/bugslife.png" width="500px" height="300px" alt="A Bugs Life" /></li>
-									<li><img src="jquery-horizontal-scrollbars/images/incredibles.png" width="500px" height="300px" alt="The Incredibles" /></li>
-								</ul>
-							</li>		
-						</ul>			
-							<div id="scrollbar">
-								<a id="left_scroll" class="mouseover_left" href="#"></a>
-								<div id="track">
-						    		<div id="dragBar"></div>
-								</div>
-								<a id="right_scroll" class="mouseover_right" href="#"></a></div>
-							</div>
+						<div class="scroll-pane ui-widget ui-widget-header ui-corner-all">
+						  <div class="scroll-content">
+						    <li class="scroll-content-item"><img src="img/projects/bbcgossau.jpg" width="480px" height="300px" alt="BBC Gossau" /></li>
+						    <li class="scroll-content-item"><img src="img/projects/beautyinn.jpg" width="480px" height="300px" alt="Beauty Inn" /></li>
+						    <li class="scroll-content-item"><img src="img/projects/kreuzlingenbewegtsich.jpg" width="512px" height="300px" alt="Kreuzlingen bewegt sich" /></li>
+						    <li class="scroll-content-item"><img src="img/projects/bauchrednerin.jpg" width="327px" height="300px" alt="Bauchrednerin" /></li>
+						    <li class="scroll-content-item"><img src="img/projects/yvonnegilli.jpg" width="335px" height="300px" alt="Yvonne Gilli" /></li>
+						    <li class="scroll-content-item"><img src="img/projects/yvonnegilli_02.jpg" width="480px" height="300px" alt="Yvonne Gilli" /></li>
+						    <li class="scroll-content-item"><img src="img/projects/eportfolio_01.jpg" width="480px" height="300px" alt="ePortfolio" /></li>
+						    <li class="scroll-content-item"><img src="img/projects/imagefriends.jpg" width="524px" height="300px" alt="Imagefriends" /></li>
+						  </div>
+						  <div class="scroll-bar-wrap ui-widget-content ui-corner-bottom">
+						    <div class="scroll-bar"></div>
+						  </div>
+						</div>			
 						<div class="row project-article">
 							<div class="col-md-4">
 								<div id="project_01" class="carousel slide">
@@ -302,7 +296,9 @@ Zurzeit arbeitet dieser in der IT Abteilung der SBW Holding, verwaltet mit Unter
 	<script src="//code.jquery.com/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>  
     <script src="js/main.js"></script>
-    <script src="js/jquery.horizontal.scroll.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/gallery_slider.js"></script>
 </body>
 </html>
 
