@@ -114,8 +114,8 @@ nav a:hover{
 	text-align: right;
 	color: white;
 }
-.video-text h1 
-{	margin: 0;
+.video-text h1 {
+	margin: 0;
 }
 .video-border{
 	width:100%;
@@ -123,33 +123,37 @@ nav a:hover{
 	background:url(../img/pattern_background_bottom_t.png);
 	background-repeat:repeat-x;
 }
-.video-button a{
+.video-button{
 	position:absolute;
-	top:80%;
+	bottom:10%;
+	left:50%;
+	margin-left:-220px;
+	width:440px;
+}
+.video-button a:hover{
+	border-radius: 0px;
+	color:white;
+}
+.video-button a i{
+	padding-right:10px;
+}
+.buttonbox{
+	position: relative;
+	margin:10px;
+	width:200px;
+	height:60px;
 	border: 2px solid #fff;
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.8em;
 	color: white;
-	min-height: 41px;
 	padding: 12px 10px 12px 10px;
 	border-radius: 20px;
+	text-align: center;
 	-webkit-transition: border-radius 0.3s;
 	-moz-transition: border-radius 0.3s;
 	-o-transition: border-radius 0.3s;
 	transition: border-radius 0.3s;
-}
-.video-button a:hover{
-	border-radius: 0px;
-}
-.video-button a i{
-padding-right:10px;
-}
-.video-button a:first-child{
-	left:38%;
-}
-.video-button a:last-child{
-	left:52%;
 }
 h1,h2,h3,h4,h5{
 	color:#FFF;
