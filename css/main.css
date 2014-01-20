@@ -197,7 +197,7 @@ h5{font-size:70%;}
 .scroll-content-item img{border: 1.5px solid #838383; border-radius: 8px;}
 .ui-widget-content{border:none; background-color: #999; background-image: none; height: 14px; border-radius: 8px;}
 .scroll-bar-wrap .ui-slider-handle {top:0px !important; height:14px; border: 1px solid #666;border-radius: 8px;}
-.ui-widget-header{background:#E6E6E6 url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 100% 100% repeat-x;}
+.ui-widget-header{background:#7E7171 url(../img/pattern.png)}
 
 .col-md-12 h2{
 	color:#00AEEF;
