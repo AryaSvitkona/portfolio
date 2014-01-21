@@ -165,27 +165,62 @@ h3{font-size:200%;}
 h4{font-size:100%;}
 h5{font-size:70%;}
 .timeline{
-	padding:0;
-}
-.timeline li{
+	margin: 0;
+	padding: 0;
 	list-style: none;
-	margin: 20px 0 20px 0;
 }
-.timeline-bar{
-	position: absolute;
-	top: 0;
-	width: 5px;
-	height: 100%;
-	background: red;
-	z-index: 2;
+.timeline-event{
+	position: relative;
+	clear: both;
+	width: 50%;
+	padding: 0;
+	background-color:rgba(77, 218, 218, 0.09)
+}
+.timeline-event:nth-child(odd) {
+	margin: 0 0 0 50%;
+}
+.timeline h4{
+	color:#000;
+	font-size: 120%;
+}
+.datetime{
+	color:#aaa;
 }
 .timeline-icon{
-	margin-left:50%;
-	padding-left:11px;
-	z-index:4;
+	border-radius: 60px;
+	position: absolute;
+	z-index: 20;
+	right: -30px;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	border: 4px solid #ddd;
+	border-right-color: none;
+	margin: -30px 0 0 0;
+	padding: 11px 0;
+	background: #00AEEF;
+}
+.timeline-event:nth-child(odd) .timeline-icon {
+	left: -30px;
+}
+.timeline-message{
+	position: relative;
+	padding: 25px 25px 10px 25px;
+	margin: 0 50px 0 25px;
+}
+.timeline-line{
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 50%;
+	width: 4px;
+	height: 100%;
+	margin: 0 0 0 -2px;
+	padding: 0;
+	background: #ddd;
 }
 /* Gallery*/
-
 .scroll-pane { overflow: auto; width: 100%; float:left; margin-bottom: 10px; }
 .scroll-content { width: 3778px; float: left; }
 .scroll-content-item {  height: 300px; float: left; margin: 10px; font-size: 3em; line-height: 96px; text-align: center; list-style: none;}
@@ -195,7 +230,7 @@ h5{font-size:70%;}
 .scroll-bar-wrap .ui-slider-handle { top:0.5em !important; height: 1.5em; }
 .scroll-bar-wrap .ui-slider-handle .ui-icon { margin: -8px auto 0; position: relative; top: 50%; }
 .scroll-content-item img{border: 1.5px solid #838383; border-radius: 8px;}
-.ui-widget-content{border:none; background-color: #999; background-image: none; height: 14px; border-radius: 8px;}
+.ui-widget-content{border:none; background-color: #ddd; background-image: none; height: 14px; border-radius: 8px;}
 .scroll-bar-wrap .ui-slider-handle {top:0px !important; height:14px; border: 1px solid #666;border-radius: 8px;}
 .ui-widget-header{background:#7E7171 url(../img/pattern.png)}
 
