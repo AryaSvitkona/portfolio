@@ -1,6 +1,7 @@
 /* main styling */
 body {
 	overflow-x: hidden; 
+	font-size: 1.5em;
 }
 .flt-r{
 	float:right;
@@ -241,6 +242,9 @@ h5{font-size:70%;}
 .col-md-12 h3{
 	color:#00AEEF;
 	text-shadow: 0 0 0;
+}
+#projects h3{
+	margin-top: 0;
 }
 .socialized{
 	width:56px;
