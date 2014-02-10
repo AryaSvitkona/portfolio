@@ -294,13 +294,21 @@ h5{font-size:70%;}
 .carousel-indicators li{
 	border-color: #fff;
 	background-color: rgba(0, 0, 0, 0.25);
+	width:14px;
+	height:14px;
 }
 .carousel-indicators .active{
-	background-color: #00AEEF;
+	background-color: #444;
+	width:14px;
+	height:14px;
 }
 .carousel-inner{
 	border-radius: 10px;
 }
+.carousel-control{
+	border-radius: 10px;
+}
+/*Mobile changes */
 @media only screen and (max-width: 780px){
 	h1{font-size:300%;}
 	h2{font-size:150%;}
