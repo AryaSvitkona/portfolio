@@ -9,7 +9,6 @@
 	<title>ePortfolio</title>
 	<meta charset="utf-8">
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-	<meta name="viewport" content="width=device-width" />
 	<link rel="shortcut icon" href="img/favicon.ico" >
 </head>
 <body>
@@ -17,11 +16,11 @@
 		<aside>
 			<nav>
 				<ul>
-					<li><a href="#">top</a></li>
-					<li><a href="#whoiam">who I am</a></li>
-					<li><a href="#timeline">timeline</a></li>
-					<li><a href="#projects">projects</a></li>
-					<li><a href="#contact">contact</a></li>
+					<li><a href="#bgvideo" class="scrollto">top</a></li>
+					<li><a href="#whoiam" class="scrollto">who I am</a></li>
+					<li><a href="#timeline" class="scrollto">timeline</a></li>
+					<li><a href="#projects" class="scrollto">projects</a></li>
+					<li><a href="#contact" class="scrollto">contact</a></li>
 				</ul>
 			</nav>
 		</aside>
@@ -34,7 +33,29 @@
 				<span class="hidden">Toggle Menu</span>
 			</button>
 			<div class="video-background">
-				<video autoplay preload src="video/homo4.mp4" type="video/mp4" autoplay loop muted="muted" volume="0" poster=""></video>
+				<video id="bgvideo"  autoplay preload src="video/homo2.mp4" type="video/mp4" autoplay loop muted="muted" volume="0"></video>
+				<div id="picshow">
+					<div id="mobileslide" class="carousel slide">
+						<ol class="carousel-indicators">
+							<li data-target="#mobileslide" data-slide-to="0" data-interval="1000" class="active"></li>
+							<li data-target="#mobileslide" data-slide-to="1"></li>
+							<li data-target="#mobileslide" data-slide-to="2"></li>
+							<li data-target="#mobileslide" data-slide-to="3"></li>
+						</ol>
+						<!-- content -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="http://www.wallpaperbunny.com/wp-content/uploads/2013/04/Download-Funny-Cat-Wallpaper-3D.jpg" width="100%">
+							</div>
+							<div class="item">
+								<img src="http://www.wallpaperbunny.com/wp-content/uploads/2013/04/Download-Funny-Cat-Wallpaper-3D.jpg" width="100%">
+							</div>
+							<div class="item">
+								<img src="http://www.wallpaperbunny.com/wp-content/uploads/2013/04/Download-Funny-Cat-Wallpaper-3D.jpg" width="100%">
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="video-pattern"></div>
 				<div class="video-text">
 					<h1>Stefano Rutishauser</h1>
@@ -61,8 +82,9 @@
 						<div class="row">
 							<div class="col-md-8">
 									<p>
-									Stefano Rutishauser ist ein ausgelehrter Mediamatiker (yeah mit EFZ), welcher im August 2012 abschloss. Seine Ausbildung absolvierte dieser während 4 Jahren in der SBW Neue Medien AG in Romanshorn. </br>
-									Zurzeit arbeitet dieser in der IT Abteilung der SBW Holding, verwaltet mit Unterstützung die Infrastruktur und bearbeitet 1|2 Level Support Anfragen. Wer sein tägliches Brot verdient, weiss das man mit zwei Jobs mehr Brot bekommt, daher arbeitet Stefano zusätzlich 20% bei der SBW Neue Medien AG als Lernbegleiter. Durch seine Funktion als “Begleiter beim Lernen” liegt ihm viel daran, sein Wissen den Auszubildenden weiterzugeben. Sein Interesse liegt dabei stark in der WebEntwicklung sowie im Bereich 3D Design.</br>
+									Stefano Rutishauser ist ein ausgelernter Mediamatiker (mit EFZ), welcher im August 2012 abschloss. Seine Ausbildung absolvierte dieser während 4 Jahren in der SBW Neue Medien AG in Romanshorn. </br>
+									Zurzeit arbeitet er in der IT Abteilung der SBW Holding, verwaltet mit Unterstützung die Infrastruktur und bearbeitet 1|2 Level Support Anfragen. Wer sein tägliches Brot verdient, weiss das man mit zwei Jobs mehr Brot bekommt, daher arbeitet Stefano zusätzlich 20% bei der SBW Neue Medien AG als Lernbegleiter. Durch seine Funktion als “Begleiter beim Lernen” liegt ihm viel daran, sein Wissen den Auszubildenden weiterzugeben. Sein Interesse liegt dabei stark im WebPublishing sowie im Bereich 3D Design.</br>
+									Weitere Informationen über sich und sein Werdegang findet man auf dieser Website oder (einfacher) man kontaktiert ihn per Mail.
 									</p>
 									<p>Nun ist Stefano gelangweilt in der dritten Person zu schreiben und macht hier Schluss…</p>
 									<!--
@@ -114,7 +136,7 @@
 											<p class="timeline-message-text">
 												<span class="datetime"> August 1998 - August 2004 </span>
 											</p>
-											<p>Meine Schulzeit in der Primarschule Altnau.
+											<p>Meine Schulzeit (1. - 6. Klasse) in der Primarschule Altnau.
 											</p>
 										</div>
 									</li>
@@ -129,7 +151,7 @@
 											<p class="timeline-message-text">
 												<span class="datetime"> August 2004 - August 2008 </span>
 											</p>
-											<p>Die Oberstufe Altnau wurde von mir gut besucht. Da mir diese sehr gefallen hat, entschloss ich mich in der 2.Oberstufe eine ehrenrunde einzulegen. Somit schloss ich im August 2008 ein jahr später die Volksschule ab.
+											<p>Die Oberstufe Altnau wurde von mir gut besucht. Da mir diese sehr gefallen hat, entschloss ich mich in der 2.Oberstufe eine Ehrenrunde einzulegen. Somit schloss ich im August 2008 ein jahr später die Volksschule ab.
 											</p>
 										</div>
 									</li>
@@ -144,8 +166,8 @@
 											<p class="timeline-message-text">
 												<span class="datetime"> August 2008 - August 2012 </span>
 											</p>
-											<p>Meine Ausbildung als Mediamatiker mit EFZ begann ich im August 2008 in der SBW Neue Medien AG in Romanshorn.
-												Über die 4 Ausbildungsjahre hinaus wurde uns Fachwissen in den Bereichen "WebDesign", "Marketing", "Hardware", "Netzwerk", "Video" &amp; "Audio" beigebracht.
+											<p>Meine Ausbildung als Mediamatiker (mit EFZ) begann ich im August 2008 in der SBW Neue Medien AG in Romanshorn.
+												Über die 4 Ausbildungsjahre hinaus wurde uns Fachwissen in den Bereichen WebDesign | Marketing | Hardware | Netzwerk | Video | Audio beigebracht.
 										</div>
 									</li>
 									<li class="timeline-event" style="left:auto;">
@@ -159,7 +181,7 @@
 											<p class="timeline-message-text">
 												<span class="datetime"> August 2012 - Februar 2013 </span>
 											</p>
-											<p>Als Lernbegleiter arbeitete ich nach meiner Ausbildung im gleichen Betrieb weiter. Meine Funktion war dabei das Coachen der Auszubildenden und Ihnen mit meinem Fachwissen bei der realisierung von Projekte zu helfen.
+											<p>Als Lernbegleiter arbeitete ich nach meiner Ausbildung im gleichen Betrieb weiter. Meine Funktion war dabei das Coachen der Auszubildenden und Ihnen mit meinem Fachwissen bei der Realisierung von Projekten zu helfen.
 											</p>
 										</div>
 									</li>
@@ -200,21 +222,6 @@
 					</div>
 					<div id="projects" class="col-md-12">
 						<h2>projects</h2>
-						<!--<div class="scroll-pane ui-widget ui-widget-header ui-corner-all">
-							<div class="scroll-content">
-						    	<li class="scroll-content-item"><img src="img/projects/bbcgossau.jpg" width="480px" height="300px" alt="BBC Gossau" /></li>
-							    <li class="scroll-content-item"><img src="img/projects/beautyinn.jpg" width="480px" height="300px" alt="Beauty Inn" /></li>
-							    <li class="scroll-content-item"><img src="img/projects/kreuzlingenbewegtsich.jpg" width="512px" height="300px" alt="Kreuzlingen bewegt sich" /></li>
-							    <li class="scroll-content-item"><img src="img/projects/bauchrednerin.jpg" width="327px" height="300px" alt="Bauchrednerin" /></li>
-							    <li class="scroll-content-item"><img src="img/projects/yvonnegilli.jpg" width="335px" height="300px" alt="Yvonne Gilli" /></li>
-							    <li class="scroll-content-item"><img src="img/projects/yvonnegilli_02.jpg" width="480px" height="300px" alt="Yvonne Gilli" /></li>
-							    <li class="scroll-content-item"><img src="img/projects/eportfolio_01.jpg" width="480px" height="300px" alt="ePortfolio" /></li>
-							    <li class="scroll-content-item"><img src="img/projects/imagefriends.jpg" width="524px" height="300px" alt="Imagefriends" /></li>
-							</div>
-						</div>	
-						<div class="scroll-bar-wrap ui-widget-content ui-corner-bottom">
-							<div class="scroll-bar"></div>
-						</div>-->	
 						<div class="row project-article">
 							<div class="col-md-4">
 								<div id="project_01" class="carousel slide">
@@ -223,20 +230,28 @@
 										<li data-target="#project_01" data-slide-to="1"></li>
 										<li data-target="#project_01" data-slide-to="2"></li>
 										<li data-target="#project_01" data-slide-to="3"></li>
+										<li data-target="#project_01" data-slide-to="4"></li>
+										<li data-target="#project_01" data-slide-to="5"></li>
 									</ol>
 									<!-- content -->
 									<div class="carousel-inner">
 										<div class="item active">
-											<img src="img/projects/small/yvonnegilli_02.jpg" width="100%">
+											<img src="img/projects/small/bbcgossau.jpg" width="100%">
 										</div>
 										<div class="item">
-											<img src="img/projects/small/bbcgossau.jpg" width="100%">
+											<img src="img/projects/small/kreuzlingenbewegtsich.jpg" width="100%">
+										</div>
+										<div class="item">
+											<img src="img/projects/small/yvonnegilli_02.jpg" width="100%">
 										</div>
 										<div class="item">
 											<img src="img/projects/small/legio_patria.jpg" width="100%">
 										</div>
 										<div class="item">
 											<img src="img/projects/small/mediapedia.jpg" width="100%">
+										</div>
+										<div class="item">
+											<img src="img/projects/small/mediapedia_2.jpg" width="100%">
 										</div>
 									</div>
 									 <!-- control left/right -->
@@ -255,7 +270,7 @@
 									</div>
 									<div class="col-md-12">
 										<p>Mit dem Projekt <i>"BBC Gossau"</i> erhielt ich sehr früh die Chance an einem Webprojekt mitzuwirken.
-										   Das Umsetzen eines Joomla Templates viel mir dabei  zu beginn eher schwer, jedoch dufte ich dabei sehr Erfahrungen sammeln. Mit "Beauty Inn" kam das zweite Webprojekt auf mich zu, bei welchem ich mit spezifischen Vorgaben ein ReDesign erstellten durfte. <a href="http://www.kreuzlingenbewegtsich.ch/home.html"><i>"Kreuzlingen Bewegt Sich"</i></a> wurde ein Mandat für welches  ich über 2 Monate hinweg aktualisierte und den Support sicherstellte. Als grafischer Mitarbeiter durfte ich für die Nationalrätin <a href="http://www.yvonne-gilli.ch/"><i>"Yvonne Gilli"</i></a> mehrere Designvorschläge ausarbeiten. "Imagefriends" wurde ein <a href="http://www.pinterest.com"><i>"Pinterest"</i></a> ähnliches Lernprojekt bei welchem weitere PHP Grundlagen, das Framework <a href="http://desandro.github.io/masonry/"><i>"Masonry"</i></a> und die Facebook API kennengelernt wurden. Anschliessend befasste ich mich tiefer mit den aktuellen Technologien wie HTML5, CSS3 und jQuery um mein <a href="http://www.portfolio.projectlearning.ch"><i>ePortfolio</i></a> zu erstellen und somit den aktuellen Standards gerecht zu werden.</p>
+										   Das Umsetzen eines Joomla Templates viel mir dabei  zu Beginn eher schwer, jedoch dufte ich dabei sehr viele Erfahrungen sammeln. Mit "Beauty Inn" kam das zweite Webprojekt auf mich zu, bei welchem ich mit spezifischen Vorgaben ein Redesign erstellten durfte. <a href="http://www.kreuzlingenbewegtsich.ch/home.html"><i>"Kreuzlingen Bewegt Sich"</i></a> wurde ein Mandat für welches  ich über 2 Monate hinweg die Inhalte | Umfragen aktualisierte und den Support sicherstellte. Als grafischer Mitarbeiter durfte ich für die Nationalrätin <a href="http://www.yvonne-gilli.ch/"><i>"Yvonne Gilli"</i></a> mehrere Designvorschläge ausarbeiten. "Imagefriends" wurde ein <a href="http://www.pinterest.com"><i>"Pinterest"</i></a> ähnliches Lernprojekt bei welchem weitere PHP Grundlagen, das Framework <a href="http://desandro.github.io/masonry/"><i>"Masonry"</i></a> und die Facebook API kennengelernt wurden. Um eine Ausstellung von diversen Artikeln der Fremdenlegion zu publizieren, arbeitete ich für einen Bekannten, verschiedene Vorschläge für eine entsprechende <a href="http://legio-patria-nostra.ch/"><i>Website</i></a> aus. Mit dem Projekt <a href="http://projectlearning.ch/"><i/>"Mediapedia"</i></a> begann ich einen Lernblog für unsere Auszubildenden zu realisieren. Anschliessend befasste ich mich tiefer mit den aktuellen Technologien wie HTML5, CSS3 und jQuery um mein <a href="http://www.portfolio.projectlearning.ch"><i>ePortfolio</i></a> zu erstellen und somit den aktuellen Standards gerecht zu werden.</p>
 									</div>
 								</div>
 							</div>
@@ -374,7 +389,6 @@
 										<li data-target="#project_04" data-slide-to="0" class="active"></li>
 										<li data-target="#project_04" data-slide-to="1"></li>
 										<li data-target="#project_04" data-slide-to="2"></li>
-										<li data-target="#project_04" data-slide-to="3"></li>
 									</ol>
 									<div class="carousel-inner">
 										<div class="item active">
@@ -388,12 +402,7 @@
 											</div>
 										</div>
 										<div class="item">
-											<img src="img/projects/small/ictlabor_01.jpg" width="100%">
-											<div class="carousel-caption">
-											</div>
-										</div>
-										<div class="item">
-											<img src="img/projects/small/ictlabor_02.jpg" width="100%">
+											<img src="img/projects/small/ict_labor_low_2.jpg" width="100%">
 											<div class="carousel-caption">
 											</div>
 										</div>

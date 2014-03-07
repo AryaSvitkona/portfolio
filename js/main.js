@@ -1,3 +1,9 @@
+userAgent = window.navigator.userAgent;
+if(/(iPhone|iPod|iPad)/.test(userAgent)) {
+	document.getElementById("picshow").style.display = "block";
+	document.getElementById("bgvideo").style.display = "none";
+}
+
 (function($) {
 	var Nav = {
 		sidebar: null,
@@ -42,9 +48,26 @@
 			$(this.title).animate({ right: '21%' });
 		}
 	};
+	
+function slide(){
+	$('#mobileslide').carousel({
+      interval: 5000
+    });
+	}
 
-	$(document).ready(function() {
+$('.scrollto').on('click', function(e){
+    var href = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop:$(href).offset().top
+    },'slow');
+    e.preventDefault();
+});
+
+$(document).ready(function() {
+		slide();
 		Nav.init();
 		$('#horiz_container_outer').horizontalScroll();
+
+
 	});
 })(jQuery);
