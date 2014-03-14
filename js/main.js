@@ -1,8 +1,3 @@
-userAgent = window.navigator.userAgent;
-if(/(iPhone|iPod|iPad)/.test(userAgent)) {
-	document.getElementById("picshow").style.display = "block";
-	document.getElementById("bgvideo").style.display = "none";
-}
 
 (function($) {
 	var Nav = {
@@ -55,6 +50,20 @@ function slide(){
     });
 	}
 
+colorcount = 1;
+function changeColorScheme(){
+	$(".element" + colorcount).addClass('videotext-active').delay(1000).queue(function(next){
+	    $(this).removeClass('videotext-active');
+	    next();
+	    colorcount++;
+	    if (colorcount > 9){
+		colorcount = 1;
+		}
+	});
+	setTimeout(changeColorScheme,1000);
+};
+
+
 $('.scrollto').on('click', function(e){
     var href = $(this).attr('href');
     $('html, body').animate({
@@ -66,8 +75,6 @@ $('.scrollto').on('click', function(e){
 $(document).ready(function() {
 		slide();
 		Nav.init();
-		$('#horiz_container_outer').horizontalScroll();
-
-
+		changeColorScheme();
 	});
 })(jQuery);

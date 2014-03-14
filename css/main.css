@@ -93,8 +93,6 @@ nav a:hover{
 	left: 0;
 	width: 100%;
 }
-#picshow{
-	display: none;}
 .video-background {
 	position: relative;
 	background-color: #000;
@@ -122,6 +120,12 @@ nav a:hover{
 }
 .video-text h1 {
 	margin: 0;
+}
+.videotext{
+	color: #ffffff;
+}
+.videotext-active{
+	color:#00AEEF;
 }
 .video-border{
 	width:100%;
